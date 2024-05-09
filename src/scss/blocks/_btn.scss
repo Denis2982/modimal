@@ -1,0 +1,42 @@
+.btn,
+a.btn {
+	display: inline-block;
+
+	padding: 8px;
+	min-width: 185px;
+	height: 40px;
+
+	background: var(--white);
+
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 171%;
+	text-transform: capitalize;
+	text-align: center;
+	color: var(--black);
+	transition: all 0.3s ease-in;
+
+	&:hover {
+		background: var(--neutral-grayededed);
+	}
+
+	&--small {
+		min-width: unset;
+		padding: 8px 15px;
+	}
+
+	@include tablet-small {
+			padding: 8px 9px;
+			min-width: unset;
+	}
+
+	&--mobile-wide {
+		@include tablet-small {
+				width: 100%;
+				min-width: unset;
+				text-align: left;
+				padding: 8px 16px;
+		}
+	}
+}

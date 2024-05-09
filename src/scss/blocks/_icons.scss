@@ -1,0 +1,44 @@
+.icons-wrapper {
+	padding: 30px 0;
+	display: flex;
+	column-gap: 30px;
+}
+
+.icon {
+	fill: transparent;
+	stroke: transparent;
+	width: 24px;
+	height: 24px;
+
+	@include tablet {
+			width: 20px;
+			height: 20px;
+	}
+}
+
+.icon--search {
+	fill: var(--black);
+}
+
+.icon--person {
+	fill: var(--black);
+}
+
+.icon--favorite {
+	stroke: var(--black);
+	fill: #fff;
+}
+
+.icon--bag {
+	fill: var(--black);
+}
+
+.icon--menu {
+	fill: var(--black);
+}
+
+.icon--arrow {
+	fill: var(--black);
+	width: 12px;
+	height: 8px;
+}

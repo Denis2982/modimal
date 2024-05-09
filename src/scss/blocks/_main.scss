@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+
+  @include tablet-small {
+      gap: 24px;
+  }
+}

@@ -1,0 +1,32 @@
+.collection {
+
+		&__title {
+			margin-bottom: 24px;
+
+			@include tablet-small {
+					margin-bottom: 8px;
+			}
+		}
+
+		&__cols {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 24px;
+
+			@include tablet-small {
+					gap: 16px;
+			}
+		}
+
+		&__col {
+			display: flex;
+			flex-direction: column;
+			gap: 64px;
+			justify-content: space-between;
+
+			@include tablet-small {
+					gap: 24px;
+			}
+		}
+}
+

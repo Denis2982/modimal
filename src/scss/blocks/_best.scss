@@ -1,0 +1,21 @@
+.best {
+	&__title-wrapper {
+		margin-bottom: 24px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include tablet-small {
+				margin-bottom: 8px;
+		}
+	}
+
+	&__link {
+
+		@include tablet-small {
+				display: none;
+		}
+	}
+}
+
+
